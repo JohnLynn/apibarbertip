@@ -4,6 +4,7 @@ using BarberTip.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiBarberTip.Migrations
 {
     [DbContext(typeof(BarberTipContext))]
-    partial class BarberTipContextModelSnapshot : ModelSnapshot
+    [Migration("20221026224326_ApiBarberTip3")]
+    partial class ApiBarberTip3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

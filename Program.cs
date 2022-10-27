@@ -11,8 +11,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<BarberTipContext>();
-builder.Services.AddTransient<ClienteService>();
 builder.Services.AddTransient<AgendamentoService>();
+builder.Services.AddTransient<AtividadeService>();
+builder.Services.AddTransient<ClienteService>();
+builder.Services.AddTransient<EnderecoService>();
+builder.Services.AddTransient<FuncionarioService>();
+builder.Services.AddTransient<FuncionarioServicoService>();
+builder.Services.AddTransient<RotinaService>();
+builder.Services.AddTransient<ServicoService>();
 
 var app = builder.Build();
 

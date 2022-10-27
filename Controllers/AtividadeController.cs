@@ -53,7 +53,4 @@ public class AtividadeController:ControllerBase{
         _atividadeService.ExcluirAtividade(id);
         return NoContent(); //204
     }
-
-    
-
 }

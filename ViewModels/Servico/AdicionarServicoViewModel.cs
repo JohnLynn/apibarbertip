@@ -2,7 +2,7 @@ using BarberTip.Entities;
 
 namespace BarberTip.ViewModels;
 public class AdicionarServicoViewModel{
-    public AdicionarServicoViewModel(string nome, decimal valor, DateTime tempo)
+    public AdicionarServicoViewModel(string nome, string valor, DateTime tempo)
     {
         Nome = nome;
         Valor = valor;
@@ -10,7 +10,7 @@ public class AdicionarServicoViewModel{
     }
 
     public string Nome { get; set; }
-    public decimal Valor { get; set; }
+    public string Valor { get; set; }
     public DateTime Tempo { get; set; }
     
 }

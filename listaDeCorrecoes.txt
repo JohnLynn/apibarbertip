@@ -1,0 +1,46 @@
+TABELA: Agendamentos
+
+
+TABELA: Atividades
+
+
+TABELA: Clientes
+Criar um GET para buscar pelo Nome.
+Criar um GET para buscar pelo Telefone.
+Criar um PUT para atráves do Id alterar o nome.
+Criar um PUT para atráves do Id alterar o telefone.
+Criar um PUT para atráves do Id alterar o email.
+Criar um PUT para atráves do Id alterar o dataNascimento.
+
+TABELA: Endereco
+Criar um GET para buscar pelo IdFuncionario
+Criar um GET para buscar pela Cidade
+Criar um GET para buscar pelo CEP
+Criar um PUT para atráves do Id e IdFuncionario alterar somente o logradouro.
+Criar um PUT para atráves do Id e IdFuncionario alterar somente o numero. 
+Criar um PUT para atráves do Id e IdFuncionario alterar somente o bairro.
+Criar um PUT para atráves do Id e IdFuncionario alterar somente o cidade.
+Criar um PUT para atráves do Id e IdFuncionario alterar somente o cep.
+
+TABELA: Funcionario
+Criar um GET para buscar pelo Nome.
+Criar um GET para buscar pelo CPF.
+Criar um GET para buscar pelo Telefone.
+Criar um GET para buscar pela Funcao.
+
+TABELA: FuncionarioServico
+Criar um GET para buscar pelo IdFuncionario.
+Criar um GET para buscar pelo IdServico.
+
+TABELA: Rotinas
+Solução para ter uma data de inicio e uma data de fim da rotina.
+Solução para ter um horário de inicio e um horário de fim da rotina.
+Criar um GET para buscar pelo IdFuncionario
+Criar um GET para buscar pelo Dia
+
+TABELA: Servicos
+Solução para armazenar em VALOR a quantidade em minutos que leva para concluir o serviço.
+Criar um GET para buscar pelo Nome.
+
+
+

@@ -1,7 +1,7 @@
 using BarberTip.Entities;
 namespace BarberTip.ViewModels;
 public class ListarEnderecoViewModel{
-    public ListarEnderecoViewModel(int id, string logradouro, int numero, string bairro, string cidade, int cep, int idFuncionario)
+    public ListarEnderecoViewModel(int id, string logradouro, int numero, string bairro, string cidade, string cep, int idFuncionario)
     {
         Id = id;
         Logradouro = logradouro;
@@ -17,7 +17,7 @@ public class ListarEnderecoViewModel{
     public int Numero{ get; set; }
     public string Bairro { get; set; }
     public string Cidade { get; set; }
-    public int Cep { get; set; }
+    public string Cep { get; set; }
     public int IdFuncionario { get; set; } //FK
      
 }
