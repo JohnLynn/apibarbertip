@@ -53,7 +53,4 @@ public class EnderecoController:ControllerBase{
         _enderecoService.ExcluirEndereco(id);
         return NoContent(); //204
     }
-
-    
-
 }

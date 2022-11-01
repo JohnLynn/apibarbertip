@@ -29,19 +29,35 @@ public class AgendamentoController:ControllerBase{
 
     [HttpGet("{idFuncionarioServico}")]
     public IActionResult ListarAgendamentosPeloFuncionarioServico(int idFuncionarioServico){
-        var atividade = _agendamentoService.ListarAgendamentosPeloFuncionarioServico(idFuncionarioServico);
-        if(atividade!=null){
-            return Ok(atividade);
+        var agendamento = _agendamentoService.ListarAgendamentosPeloFuncionarioServico(idFuncionarioServico);
+        if(agendamento!=null){
+            return Ok(agendamento);
         }         
         return NotFound();//Esse é o 404
     }
+
     [HttpGet("{idCliente}")]
     public IActionResult ListarAgendamentosPeloCliente(int idCliente){
-        var atividade = _agendamentoService.ListarAgendamentosPeloCliente(idCliente);
-        if(atividade!=null){
-            return Ok(atividade);
+        var agendamento = _agendamentoService.ListarAgendamentosPeloCliente(idCliente);
+        if(agendamento!=null){
+            return Ok(agendamento);
         }         
         return NotFound();//Esse é o 404
     }
-    
+
+    [HttpPut("{id}")]
+    public IActionResult AtualizarAgendamento(int id,AtualizarAgendamentoViewModel dados){
+
+        if(id != dados.Id){
+            return BadRequest("o id informado na URL é diferente do corpo da requisição");
+        }
+        var agendamento = _agendamentoService.AtualizarAgendamento(dados);
+        return Ok(agendamento);
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult ExluirAgendamento(int id){
+        _agendamentoService.ExcluirAgendamento(id);
+        return NoContent(); //204
+    }
 }

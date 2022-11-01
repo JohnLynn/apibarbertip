@@ -53,7 +53,4 @@ public class RotinaController:ControllerBase{
         _rotinaService.ExcluirRotina(id);
         return NoContent(); //204
     }
-
-    
-
 }

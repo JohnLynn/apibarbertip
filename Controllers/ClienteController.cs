@@ -60,9 +60,4 @@ public class ClienteController:ControllerBase{
         _clienteService.ExcluirCliente(id);
         return NoContent(); //204
     }
-
-    
-
 }
-
-

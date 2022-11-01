@@ -54,7 +54,4 @@ public class ServicoController:ControllerBase{
         _servicoService.ExcluirServico(id);
         return NoContent(); //204
     }
-
-    
-
 }

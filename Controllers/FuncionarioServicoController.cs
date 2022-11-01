@@ -53,7 +53,4 @@ public class FuncionarioServicoController:ControllerBase{
         _funcionarioServicoService.ExcluirFuncionarioServico(id);
         return NoContent(); //204
     }
-
-    
-
 }
