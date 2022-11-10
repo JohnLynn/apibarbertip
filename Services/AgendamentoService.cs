@@ -47,22 +47,8 @@ public class AgendamentoService
             ));
 
     }
-    public DetalhesAgendamentoViewModel? ListarAgendamentosPeloCliente(int idCliente){
-       var agendamento = _context.Agendamentos.Find(idCliente);
-       if(agendamento!=null){
-         return new DetalhesAgendamentoViewModel
-         (                       
-            agendamento.Id,
-            agendamento.Data,
-            agendamento.Hora,
-            agendamento.IdCliente,
-            agendamento.IdFuncionarioServico
-         );
-       }
-         return null;
-    } 
-    public DetalhesAgendamentoViewModel? ListarAgendamentosPeloFuncionarioServico(int idFuncionarioServico){
-       var agendamento = _context.Agendamentos.Find(idFuncionarioServico);
+    public DetalhesAgendamentoViewModel? ListarAgendamentosPeloId(int id){
+       var agendamento = _context.Agendamentos.Find(id);
        if(agendamento!=null){
          return new DetalhesAgendamentoViewModel
          (                       

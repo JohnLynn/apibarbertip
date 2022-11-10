@@ -27,24 +27,15 @@ public class AgendamentoController:ControllerBase{
         return Ok(_agendamentoService.ListarAgendamentos());
     }
 
-    [HttpGet("{idFuncionarioServico}")]
-    public IActionResult ListarAgendamentosPeloFuncionarioServico(int idFuncionarioServico){
-        var agendamento = _agendamentoService.ListarAgendamentosPeloFuncionarioServico(idFuncionarioServico);
+    [HttpGet("{id}")]
+    public IActionResult ListarAgendamentosPeloId(int id){
+        var agendamento = _agendamentoService.ListarAgendamentosPeloId(id);
         if(agendamento!=null){
             return Ok(agendamento);
         }         
         return NotFound();//Esse é o 404
     }
-
-    [HttpGet("{idCliente}")]
-    public IActionResult ListarAgendamentosPeloCliente(int idCliente){
-        var agendamento = _agendamentoService.ListarAgendamentosPeloCliente(idCliente);
-        if(agendamento!=null){
-            return Ok(agendamento);
-        }         
-        return NotFound();//Esse é o 404
-    }
-
+    
     [HttpPut("{id}")]
     public IActionResult AtualizarAgendamento(int id,AtualizarAgendamentoViewModel dados){
 
