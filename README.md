@@ -2,9 +2,9 @@
 # Barber Tip
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 ![Badge em Versão](http://img.shields.io/static/v1?label=VERSÃO&message=%201.0&color=GREEN&style=for-the-badge)
-![Badge em Modificação](http://img.shields.io/static/v1?label=ATUALIZAÇÃO&message=EM%20SETEMBRO&color=GREEN&style=for-the-badge)
+![Badge em Modificação](http://img.shields.io/static/v1?label=ATUALIZAÇÃO&message=EM%20DEZEMBRO&color=GREEN&style=for-the-badge)
 
-Sistema de Gerenciamento de Barbearia Pequeno e Médio Porte - SGBPM.
+Sistema de Gerenciamento de Barbearia - SGB.
 
 
 ## Tópicos
@@ -38,7 +38,7 @@ O desenvolvimento do sistema web “Barber Tip”, proporcionará a administraç
 # Acesso ao Projeto 
 
 ### Pré-requisitos
-:warning: Navegação Web :warning:
+> :warning: Navegação Web :warning:
 
 ## Tecnologias Utilizadas
 
